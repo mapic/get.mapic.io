@@ -16,3 +16,5 @@ git clone git@github.com:mapic/mapic.git
 # install mapic-cli
 cd mapic/cli 
 sudo bash mapic-cli.sh
+
+# ok!
