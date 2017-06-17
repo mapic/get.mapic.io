@@ -1,5 +1,6 @@
 language: generic
 
+
 notifications:
   email: false
   slack: mapic-io:NKaii0z3tRkeDyXaDbRauRFp
