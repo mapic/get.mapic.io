@@ -11,7 +11,6 @@
 # use wget/unzip instead of git?
 
 if [ $TRAVIS = "true" ]; then
-    echo " mapic - Travis git clone"
     git clone https://github.com/mapic/mapic.git
 else    
     git clone git@github.com:mapic/mapic.git
@@ -20,5 +19,3 @@ fi
 # install mapic-cli
 cd mapic/cli 
 sudo bash mapic-cli.sh
-
-# ok!
