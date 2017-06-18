@@ -10,9 +10,11 @@
 # todo: ubuntu/osx/windows compatibility.
 # use wget/unzip instead of git?
 
-if [ $TRAVIS = "true" ]; then
+if [ "$TRAVIS" = true ]; then
+    # clone with https
     git clone https://github.com/mapic/mapic.git
 else    
+    # clone with ssh
     git clone git@github.com:mapic/mapic.git
 fi
 
