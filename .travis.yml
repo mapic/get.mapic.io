@@ -16,12 +16,16 @@ notifications:
 git:
   submodules: false
 
-os:
-  - linux
-  - osx
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+    - os: osx
+      osx_image: xcode8.3
+      sudo : required
 
 install:
-  # - sudo wget -qO- https://get.mapic.io/ | sh
   - sudo curl -sSL https://get.mapic.io  | sh
 
 script:
