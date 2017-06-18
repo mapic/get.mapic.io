@@ -2,8 +2,16 @@
 language: generic
 
 notifications:
-  email: false
-  slack: mapic-io:NKaii0z3tRkeDyXaDbRauRFp
+  email:
+    recipients:
+      - knutole@mapic.io
+    on_success: change
+    on_failure: change
+  slack:
+    rooms:
+      - mapic-io:NKaii0z3tRkeDyXaDbRauRFp
+    on_success: change
+    on_failure: change
 
 git:
   submodules: false
