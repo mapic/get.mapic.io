@@ -16,32 +16,13 @@ notifications:
 git:
   submodules: false
 
-matrix:
-  include:
-    - os: linux
-      dist: trusty
-      sudo: required
-    - os: linux
-      dist: xenial
-      sudo: required
-    - os: linux
-      dist: precise
-      sudo: required
-    - os: linux
-      dist: zesty
-      sudo: required
-    - os: linux
-      dist: yakkety
-      sudo: required
-    - os: linux
-      dist: artful
-      sudo: required
-    - os: osx
-      osx_image: xcode8.3
-      sudo : required
+os:
+  - linux
+  - osx
 
 install:
-  - sudo wget -qO- https://get.mapic.io/ | sh
+  # - sudo wget -qO- https://get.mapic.io/ | sh
+  - sudo curl -sSL https://get.mapic.io  | sh
 
 script:
   - mapic 
