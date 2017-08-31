@@ -1,24 +1,20 @@
 #!/bin/bash
 # 
-# This script is meant for quick & easy install via:
-#   'wget -qO- https://get.mapic.io/ | sh'
-# or:
+# This script is for quick & easy install via:
 #   'curl -sSL https://get.mapic.io/ | sh'
+# or:
+#   'wget -qO- https://get.mapic.io/ | sh'
 #
 # #
+# todo: 
+# - ubuntu/osx/windows compatibility.
+# - use wget/unzip instead of git?
 
-# todo: ubuntu/osx/windows compatibility.
-# use wget/unzip instead of git?
-
-if [ "$TRAVIS" = true ]; then
-    # clone with https
-    git clone https://github.com/mapic/mapic.git
-else    
-    # clone with ssh
-    git clone https://github.com/mapic/mapic.git
-    # git clone git@github.com:mapic/mapic.git
-fi
+# clone mapic repository
+echo "Downloading Mapic..."
+git clone https://github.com/mapic/mapic.git
 
 # install mapic-cli
+echo "Installing Mapic..."
 cd mapic/cli 
 sudo bash mapic-cli.sh
