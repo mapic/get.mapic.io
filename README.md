@@ -1,3 +1,3 @@
-# get.mapic.io [![Build Status](https://travis-ci.org/mapic/get.mapic.io.svg?branch=master)](https://travis-ci.org/mapic/get.mapic.io) 
+# https://get.mapic.io web-server
 
-Hosted script for installing Mapic
+Not much else to say
