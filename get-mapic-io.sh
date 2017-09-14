@@ -5,14 +5,12 @@
 # or:
 #   'wget -qO- https://get.mapic.io/ | sh'
 #
-# #
 # todo: 
-# - ubuntu/osx/windows compatibility.
-# - use wget/unzip instead of git?
+# - windows compatibility
 
 # clone mapic repository
 echo "Downloading Mapic..."
-git clone https://github.com/mapic/mapic.git
+git clone https://github.com/mapic/mapic.git >/dev/null 2>&1
 
 # install mapic-cli
 echo "Installing Mapic..."
