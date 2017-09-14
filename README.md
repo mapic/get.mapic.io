@@ -1,3 +1,3 @@
-# https://get.mapic.io web-server
+# Webserver for https://get.mapic.io
 
-Not much else to say
+Not much else to say.
